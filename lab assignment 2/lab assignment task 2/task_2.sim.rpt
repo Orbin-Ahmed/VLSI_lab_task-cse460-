@@ -1,0 +1,234 @@
+Simulator report for task_2
+Tue Apr 05 18:17:25 2022
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 61 nodes     ;
+; Simulation Coverage         ;      80.33 % ;
+; Total Number of Transitions ; 2319         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10KE     ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; task_2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      80.33 % ;
+; Total nodes checked                                 ; 61           ;
+; Total output ports checked                          ; 61           ;
+; Total output ports with complete 1/0-value coverage ; 49           ;
+; Total output ports with no 1/0-value coverage       ; 12           ;
+; Total output ports with no 1-value coverage         ; 12           ;
+; Total output ports with no 0-value coverage         ; 12           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |task_2|next_state~1          ; |task_2|next_state~1          ; out              ;
+; |task_2|purchase~0            ; |task_2|purchase~0            ; out              ;
+; |task_2|cash_return~0         ; |task_2|cash_return~0         ; out              ;
+; |task_2|cash_return~1         ; |task_2|cash_return~1         ; out              ;
+; |task_2|next_state~3          ; |task_2|next_state~3          ; out              ;
+; |task_2|purchase~1            ; |task_2|purchase~1            ; out              ;
+; |task_2|cash_return~2         ; |task_2|cash_return~2         ; out              ;
+; |task_2|cash_return~3         ; |task_2|cash_return~3         ; out              ;
+; |task_2|next_state~5          ; |task_2|next_state~5          ; out              ;
+; |task_2|purchase~2            ; |task_2|purchase~2            ; out              ;
+; |task_2|cash_return~4         ; |task_2|cash_return~4         ; out              ;
+; |task_2|cash_return~5         ; |task_2|cash_return~5         ; out              ;
+; |task_2|cash_return~6         ; |task_2|cash_return~6         ; out              ;
+; |task_2|next_state~6          ; |task_2|next_state~6          ; out              ;
+; |task_2|purchase~3            ; |task_2|purchase~3            ; out              ;
+; |task_2|cash_return~7         ; |task_2|cash_return~7         ; out              ;
+; |task_2|cash_return~8         ; |task_2|cash_return~8         ; out              ;
+; |task_2|next_state~7          ; |task_2|next_state~7          ; out              ;
+; |task_2|purchase~4            ; |task_2|purchase~4            ; out              ;
+; |task_2|cash_return~9         ; |task_2|cash_return~9         ; out              ;
+; |task_2|cash_return~10        ; |task_2|cash_return~10        ; out              ;
+; |task_2|present_state~1       ; |task_2|present_state~1       ; out              ;
+; |task_2|next_state~9          ; |task_2|next_state~9          ; out              ;
+; |task_2|cash_return[0]~reg0   ; |task_2|cash_return[0]~reg0   ; regout           ;
+; |task_2|cash_return[1]~reg0   ; |task_2|cash_return[1]~reg0   ; regout           ;
+; |task_2|purchase~reg0         ; |task_2|purchase~reg0         ; regout           ;
+; |task_2|next_state[0]~reg0    ; |task_2|next_state[0]~reg0    ; regout           ;
+; |task_2|present_state[0]~reg0 ; |task_2|present_state[0]~reg0 ; regout           ;
+; |task_2|clock                 ; |task_2|clock                 ; out              ;
+; |task_2|cash_in[0]            ; |task_2|cash_in[0]            ; out              ;
+; |task_2|cash_in[1]            ; |task_2|cash_in[1]            ; out              ;
+; |task_2|purchase              ; |task_2|purchase              ; pin_out          ;
+; |task_2|present_state[0]      ; |task_2|present_state[0]      ; pin_out          ;
+; |task_2|next_state[0]         ; |task_2|next_state[0]         ; pin_out          ;
+; |task_2|cash_return[0]        ; |task_2|cash_return[0]        ; pin_out          ;
+; |task_2|cash_return[1]        ; |task_2|cash_return[1]        ; pin_out          ;
+; |task_2|Selector1~3           ; |task_2|Selector1~3           ; out              ;
+; |task_2|Selector1~4           ; |task_2|Selector1~4           ; out              ;
+; |task_2|Selector2~3           ; |task_2|Selector2~3           ; out              ;
+; |task_2|Selector2~4           ; |task_2|Selector2~4           ; out              ;
+; |task_2|Selector3~3           ; |task_2|Selector3~3           ; out              ;
+; |task_2|Selector3~4           ; |task_2|Selector3~4           ; out              ;
+; |task_2|Selector4~3           ; |task_2|Selector4~3           ; out              ;
+; |task_2|Selector4~4           ; |task_2|Selector4~4           ; out              ;
+; |task_2|Equal0~3              ; |task_2|Equal0~3              ; out0             ;
+; |task_2|Equal1~3              ; |task_2|Equal1~3              ; out0             ;
+; |task_2|Equal2~3              ; |task_2|Equal2~3              ; out0             ;
+; |task_2|Equal3~3              ; |task_2|Equal3~3              ; out0             ;
+; |task_2|Equal4~3              ; |task_2|Equal4~3              ; out0             ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |task_2|next_state~0          ; |task_2|next_state~0          ; out              ;
+; |task_2|next_state~2          ; |task_2|next_state~2          ; out              ;
+; |task_2|next_state~4          ; |task_2|next_state~4          ; out              ;
+; |task_2|WideNor0              ; |task_2|WideNor0              ; out0             ;
+; |task_2|present_state~0       ; |task_2|present_state~0       ; out              ;
+; |task_2|next_state~8          ; |task_2|next_state~8          ; out              ;
+; |task_2|next_state[1]~reg0    ; |task_2|next_state[1]~reg0    ; regout           ;
+; |task_2|present_state[1]~reg0 ; |task_2|present_state[1]~reg0 ; regout           ;
+; |task_2|reset                 ; |task_2|reset                 ; out              ;
+; |task_2|present_state[1]      ; |task_2|present_state[1]      ; pin_out          ;
+; |task_2|next_state[1]         ; |task_2|next_state[1]         ; pin_out          ;
+; |task_2|Selector0~2           ; |task_2|Selector0~2           ; out              ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |task_2|next_state~0          ; |task_2|next_state~0          ; out              ;
+; |task_2|next_state~2          ; |task_2|next_state~2          ; out              ;
+; |task_2|next_state~4          ; |task_2|next_state~4          ; out              ;
+; |task_2|WideNor0              ; |task_2|WideNor0              ; out0             ;
+; |task_2|present_state~0       ; |task_2|present_state~0       ; out              ;
+; |task_2|next_state~8          ; |task_2|next_state~8          ; out              ;
+; |task_2|next_state[1]~reg0    ; |task_2|next_state[1]~reg0    ; regout           ;
+; |task_2|present_state[1]~reg0 ; |task_2|present_state[1]~reg0 ; regout           ;
+; |task_2|reset                 ; |task_2|reset                 ; out              ;
+; |task_2|present_state[1]      ; |task_2|present_state[1]      ; pin_out          ;
+; |task_2|next_state[1]         ; |task_2|next_state[1]         ; pin_out          ;
+; |task_2|Selector0~2           ; |task_2|Selector0~2           ; out              ;
++-------------------------------+-------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Tue Apr 05 18:17:25 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off task_2 -c task_2
+Info: Using vector source file "C:/Users/acanto/Desktop/lab 2/task_2.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      80.33 %
+Info: Number of transitions in simulation is 2319
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Tue Apr 05 18:17:25 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

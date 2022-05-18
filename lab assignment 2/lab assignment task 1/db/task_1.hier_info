@@ -1,0 +1,7 @@
+|task_1
+clk => ~NO_FANOUT~
+resetn => ~NO_FANOUT~
+w => ~NO_FANOUT~
+z <= <GND>
+
+
